@@ -9,7 +9,7 @@ from rest_framework import status
 
 
 def home(request):
-    return HttpResponse('<h1>API Page</h1>')
+    return HttpResponse('<h1>API Home Page</h1>')
 
 @api_view(['GET', 'POST'])
 def student_api(request):

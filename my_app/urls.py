@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import home, student_api
+from .views import home
+from .views import student_api
 
 
 urlpatterns = [

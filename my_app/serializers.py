@@ -22,5 +22,5 @@ class StudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Student
         # fields = ['last_name', 'first_name', 'number']
-        # fields = '__all__'
-        exclude = ['id']
+        fields = '__all__'
+        # exclude = ['id']

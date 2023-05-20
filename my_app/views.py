@@ -17,7 +17,7 @@ def student_api(request):
         students = Student.objects.all()
         serializer = StudentSerializer(students, many=True)
         return Response(serializer.data)
-    elif request.method == 'POST':
+    elif request.method == 'POST': 
         serializer = StudentSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
